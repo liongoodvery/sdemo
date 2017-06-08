@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.lion.pop.MainActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:translationY="-50dp"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/tv_down"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="down" />
+
+    <Button
+        android:id="@+id/tv_up"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_down"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="up" />
+
+    <Button
+        android:id="@+id/tv_anim"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_up"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="anim" />
+</RelativeLayout>
